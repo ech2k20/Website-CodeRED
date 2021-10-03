@@ -13,20 +13,20 @@ function HeroSection() {
         <Button
           className='btns'
           buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          GET STARTED
+          buttonSize='btn--large'>
         </Button>
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-          onClick={console.log('hey')}
-        >
-          WATCH TRAILER <i className='far fa-play-circle' />
-        </Button>
+
       </div>
     </div>
+
+/*<Button
+className='btns'
+buttonStyle='btn--primary'
+buttonSize='btn--large'
+onClick={console.log('hey')}
+>
+WATCH TRAILER <i className='far fa-play-circle' />
+</Button>*/
   );
 }
 

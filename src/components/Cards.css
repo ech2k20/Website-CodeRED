@@ -1,7 +1,10 @@
 .cards {
-  padding: 4rem;
+  padding: 3rem;
   background: #fff;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
+
 
 h1 {
   text-align: center;
@@ -12,7 +15,7 @@ h1 {
   flex-flow: column;
   align-items: center;
   max-width: 1120px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -61,9 +64,9 @@ h1 {
   position: absolute;
   bottom: 0;
   margin-left: 10px;
-  padding: 6px 8px;
+  padding: 10px 18px;
   max-width: calc((100%) - 60px);
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 700;
   color: #fff;
   background-color: #1f98f4;
@@ -95,7 +98,7 @@ h1 {
 
 .cards__item__text {
   color: #252e48;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
 }
 

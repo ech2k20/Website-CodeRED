@@ -24,53 +24,53 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
 
+
+function gohome()
+{
+window.location.href="/"
+}
+
   return (
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRVL
-            <i class='fab fa-typo3' />
+          <Link 
+            to='/' 
+            className='navbar-logo' 
+            onClick={closeMobileMenu}>
+            AVGJs
+            <i class='fab fa-bity' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
+              <Link
+                to='/personal'
+                className='nav-links'
+                onClick={closeMobileMenu}>
+                Personal
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/services'
+                to='/work'
                 className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Services
+                onClick={closeMobileMenu}>
+                Work
               </Link>
             </li>
-            <li className='nav-item'>
-              <Link
-                to='/products'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Products
-              </Link>
-            </li>
-
             <li>
               <Link
-                to='/sign-up'
+                to= '/'
                 className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Sign Up
+                onClick={closeMobileMenu}>
+                HOME
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button buttonStyle='btn--outline'></Button>}
         </div>
       </nav>
     </>

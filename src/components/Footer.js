@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { Button } from './Button';
+//import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -8,9 +8,27 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
+          Safety is our number one priorty!
         </p>
-        <p className='footer-subscription-text'>
+      </section>
+ 
+      <section class='social-media'>
+        <div class='social-media-wrap'>
+          <div class='footer-logo'>
+            <Link to='/' className='social-logo'>
+              AVGJs
+              <i class='fab fa-bity' />
+            </Link>
+          </div>
+          <div class='website-rights'>AVGJs © 2021</div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+
+/*         <p className='footer-subscription-text'>
           You can unsubscribe at any time.
         </p>
         <div className='input-areas'>
@@ -24,12 +42,13 @@ function Footer() {
             <Button buttonStyle='btn--outline'>Subscribe</Button>
           </form>
         </div>
-      </section>
-      <div class='footer-links'>
+*/
+
+/*     <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
+            <Link to='/get-started'>How it works</Link>
             <Link to='/'>Testimonials</Link>
             <Link to='/'>Careers</Link>
             <Link to='/'>Investors</Link>
@@ -59,16 +78,9 @@ function Footer() {
             <Link to='/'>Twitter</Link>
           </div>
         </div>
-      </div>
-      <section class='social-media'>
-        <div class='social-media-wrap'>
-          <div class='footer-logo'>
-            <Link to='/' className='social-logo'>
-              TRVL
-              <i class='fab fa-typo3' />
-            </Link>
-          </div>
-          <small class='website-rights'>TRVL © 2020</small>
+      </div>*/
+
+/*
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
@@ -110,11 +122,8 @@ function Footer() {
             >
               <i class='fab fa-linkedin' />
             </Link>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
+          </div> */
+
+
 
 export default Footer;

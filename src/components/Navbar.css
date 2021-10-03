@@ -10,6 +10,15 @@
   z-index: 999;
 }
 
+#work .navbar-custom {
+  display: none;
+  visibility: hidden;
+}
+
+#work header{
+  display: none;
+}
+
 .navbar-container {
   display: flex;
   justify-content: center;
